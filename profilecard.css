@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poopins',sans-serif;
+}
+.profile-card img{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(57, 59, 59);
+    box-shadow: 0 0 25px bisque;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.profile-card img:hover{
+    box-shadow: 0 0 25px bisque,
+                0 0 50px bisque,
+                0 0 100px bisque;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(Animation-2.jpg) no-repeat center;
+    background-size: cover;
+}
+.profile-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    padding: 2em 2.5em;
+    border-radius: 2em;
+    background-color: rgba(207, 207, 207, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(71, 71, 71);
+    color: white;
+}
+.profile-card .number-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+}
+.profile-card .btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 1em;
+}
+.btn-box button{
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 1em;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.btn-box .follow{
+    background-color: rgb(252, 182, 155);
+    box-shadow: 0 0 25px rgb(96, 96, 96);
+    color: black;
+}
+.btn-box .follow:hover{
+    background-color: transparent;
+    border: 2px solid lightsalmon;
+    color: white;
+    box-shadow: 0 0 25px gray,
+                inset 0 0 10px grey;
+}
+.btn-box .message{
+    background-color: transparent;
+    border: 2px solid lightsalmon;
+    color: white;
+    box-shadow: 0 0 25px gray,
+                inset 0 0 10px grey;
+}
+.number-grid .box p:first-child{
+    font-weight: 800;
+}
+.number-grid .box p:last-child{
+    font-weight: 500;
+    opacity: 0.8;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.info p{
+    color: mediumspringgreen;
+}
+.info-box .socials{
+    margin: 20px 0;
+}
+.info-box .socials i{
+    font-size: 1.5em;
+    color: rgb(240, 232, 232);
+    border: 2px solid rgb(96, 96, 96);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.info-box .socials i:hover{
+    background-color: rgb(174, 159, 174);
+    color: crimson;
+    box-shadow: 0 0 25px bisque;
+}
+.btn-box .message:hover{
+    background-color: lightsalmon;
+    color: black;
+    box-shadow: 0 0 25px gray,
+                inset 0 0 10px grey;
+}
